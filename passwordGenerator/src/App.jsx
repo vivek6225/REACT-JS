@@ -5,8 +5,8 @@ import './App.css'
 function App() {
   const [length, setLength] = useState(8)
   const [numberAllowed, setNumberAllowed] = useState(false)
-  const [charAllopwed, setCharAllowed] = useState(false)
-  const [password,setPassword]= useState(false)
+  const [charAllowed, setCharAllowed] = useState(false)
+  const [password,setPassword]= useState("")
   const [passwordGenerator] = useCallback(() =>{
     let pass=""
     let str ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -18,12 +18,12 @@ function App() {
     pass = str.charAt(char) //  accesses the character at that index.
   }
   setPassword(pass)
-  },[length,numberAllowed,charAllopwed,setPassword])
+  },[length,numberAllowed,charAllowed,setPassword])
 
    
   return (
     <>
-   <div classname="w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray"></div>
+   <div className ="w-full max-w-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray">test </div>
     </>
   )
 }
