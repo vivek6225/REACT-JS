@@ -1,0 +1,12 @@
+nav,ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul{
+  gap: 40px;
+  background-color: beige;
+}
+li{
+  padding: 23px;
+}
